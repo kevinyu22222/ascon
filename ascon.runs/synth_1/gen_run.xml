@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1773918087">
-  <File Type="REPORTS-TCL" Name="ascon_core_reports.tcl"/>
-  <File Type="RDS-UTIL" Name="ascon_core_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ascon_core_utilization_synth.pb"/>
-  <File Type="PA-TCL" Name="ascon_core.tcl"/>
-  <File Type="RDS-RDS" Name="ascon_core.vds"/>
-  <File Type="RDS-DCP" Name="ascon_core.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1774254547" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ascon_core.dcp">
+  <File Type="PA-TCL" Name="ascong_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="ascong_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ascong_top.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="ascong_top_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="ascong_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ascong_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ascong_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ascong_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ascong_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/config.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/functions.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -29,14 +39,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/functions.sv">
+    <File Path="$PSRCDIR/sources_1/new/ascon_core.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ascon_core.sv">
+    <File Path="$PSRCDIR/sources_1/new/ascong_top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -45,24 +55,40 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ascon_core"/>
+      <Option Name="TopModule" Val="ascong_top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ascon_xdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/ascon_core.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

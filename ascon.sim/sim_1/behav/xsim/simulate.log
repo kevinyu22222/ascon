@@ -1,28 +1,201 @@
 Time resolution is 1 ps
-============================================
- ASCON-AEAD128 Encryption Test              
-============================================
- Key:   000102030405060708090A0B0C0D0E0F
- Nonce: 000102030405060708090A0B0C0D0E0F
- AD:    00010203
- PT:    00010203
---------------------------------------------
-Captured: 00000000
-Captured: 00000000
-Captured: 00000000
-Captured: 00000000
-Captured: 00000000
-Captured: 96d9534a
-Waiting for BDO of type 4...
-Received BDO: type= 4, data=e36c3a86
-Waiting for BDO of type 4...
-Received BDO: type= 4, data=9b2520e2
-Waiting for BDO of type 4...
-Received BDO: type= 4, data=5140d9b1
-Waiting for BDO of type 4...
-Received BDO: type= 4, data=732ed503
- CT:    96d9534a
- Tag:   e36c3a86_9b2520e2_5140d9b1_732ed503
---------------------------------------------
-============================================
-$finish called at time : 111 ns : File "C:/Users/kevin/Downloads/ascon/ascon.srcs/sim_1/new/ascon_core_tb.v" Line 296
+t=5000  state=00  LED=0000  pt=xxxxxxxx
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=15000  state=00  LED=0000  pt=00000000
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=25000  state=00  LED=0000  pt=00000000
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=35000  state=00  LED=0000  pt=00000000
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=45000  state=00  LED=0000  pt=00000000
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=55000  state=00  LED=0000  pt=00000000
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=65000  state=00  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=75000  state=00  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=85000  state=02  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=95000  state=02  LED=0000  pt=0000006d
+Key_ready: 00000001, bdi_ready: 00000000, bdo_valid: 00000000
+t=105000  state=03  LED=0000  pt=0000006d
+Key_ready: 00000001, bdi_ready: 00000000, bdo_valid: 00000000
+t=115000  state=04  LED=0000  pt=0000006d
+Key_ready: 00000001, bdi_ready: 00000000, bdo_valid: 00000000
+t=125000  state=05  LED=0000  pt=0000006d
+Key_ready: 00000001, bdi_ready: 00000000, bdo_valid: 00000000
+t=135000  state=06  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=145000  state=07  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=155000  state=08  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=165000  state=09  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=175000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=185000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=195000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=205000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=215000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=225000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=235000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=245000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=255000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=265000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=275000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=285000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=295000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=305000  state=10  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=315000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=325000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=335000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=345000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=355000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=365000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=375000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=385000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=395000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=405000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=415000  state=11  LED=0000  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000001
+t=425000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=435000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=445000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=455000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=465000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=475000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=485000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=495000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=505000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=515000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=525000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=535000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=545000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=555000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=565000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=575000  state=12  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000001
+t=585000  state=13  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000001
+t=595000  state=14  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000001
+t=605000  state=15  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000001
+t=615000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000000, bdo_valid: 00000000
+t=625000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=635000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=645000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=655000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=665000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=675000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=685000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=695000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=705000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=715000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=725000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=735000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=745000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=755000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=765000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=775000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=785000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=795000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=805000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=815000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=825000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=835000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=845000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=855000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=865000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=875000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=885000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=895000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=905000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=915000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=925000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=935000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=945000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=955000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=965000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=975000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=985000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000
+t=995000  state=16  LED=5227  pt=0000006d
+Key_ready: 00000000, bdi_ready: 00000001, bdo_valid: 00000000

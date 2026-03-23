@@ -1,101 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1773918087">
-  <File Type="REPORTS-TCL" Name="ascon_core_reports.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="ascon_core_power_summary_routed.pb"/>
-  <File Type="BITSTR-MMI" Name="ascon_core.mmi"/>
-  <File Type="OPT-DRC" Name="ascon_core_drc_opted.rpt"/>
-  <File Type="BG-DRC" Name="ascon_core.drc"/>
-  <File Type="ROUTE-STATUS-PB" Name="ascon_core_route_status.pb"/>
-  <File Type="BG-BGN" Name="ascon_core.bgn"/>
-  <File Type="PLACE-UTIL" Name="ascon_core_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="ascon_core_utilization_placed.pb"/>
-  <File Type="PLACE-IO" Name="ascon_core_io_placed.rpt"/>
-  <File Type="BG-BIN" Name="ascon_core.bin"/>
-  <File Type="PLACE-CTRL" Name="ascon_core_control_sets_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="ascon_core_power_routed.rpx"/>
-  <File Type="BITSTR-MSK" Name="ascon_core.msk"/>
-  <File Type="BITSTR-RBT" Name="ascon_core.rbt"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="ascon_core_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="ascon_core_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="ascon_core_route_status.rpt"/>
-  <File Type="PA-TCL" Name="ascon_core.tcl"/>
-  <File Type="ROUTE-PWR" Name="ascon_core_power_routed.rpt"/>
-  <File Type="ROUTE-DRC" Name="ascon_core_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="ascon_core_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="ascon_core_drc_routed.pb"/>
-  <File Type="BITSTR-SYSDEF" Name="ascon_core.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ascon_core_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ascon_core_methodology_drc_routed.rpx"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1774254547">
+  <File Type="PA-TCL" Name="ascong_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="ascong_top_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="ascong_top_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="ascong_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="ascong_top_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="ascong_top_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="ascong_top_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ascong_top_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ascong_top.hwdef"/>
+  <File Type="OPT-TIMING" Name="ascong_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="ascong_top_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="ascong_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="ascong_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="ascong_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="ascong_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="ascong_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ascong_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ascong_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ascong_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ascong_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ascong_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ascong_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="ascong_top_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="ascong_top_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ascong_top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ascong_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ascong_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="ascong_top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="ascong_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ascong_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="ascong_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ascong_top_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="ascong_top_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="ascong_top_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="ascong_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ascong_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="ascong_top_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ascong_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ascong_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ascong_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ascong_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ascong_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ascong_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ascong_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ascong_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ascong_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="ascong_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ascong_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="ascong_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ascong_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ascong_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ascong_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ascong_top_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="ascong_top_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ascong_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ascong_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ascong_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ascong_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ascong_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ascong_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ascong_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ascong_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="ascong_top.bit"/>
+  <File Type="BG-BIN" Name="ascong_top.bin"/>
+  <File Type="BITSTR-MSK" Name="ascong_top.msk"/>
+  <File Type="BITSTR-RBT" Name="ascong_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="ascong_top.nky"/>
+  <File Type="BITSTR-BMM" Name="ascong_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="ascong_top.mmi"/>
+  <File Type="PDI-FILE" Name="ascong_top.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="ascong_top_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="ascong_top_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="ascong_top.rcfi"/>
+  <File Type="CFI_FILE" Name="ascong_top.cfi"/>
+  <File Type="RNPI_FILE" Name="ascong_top.rnpi"/>
+  <File Type="RCDO-FILE" Name="ascong_top.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="ascong_top_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="ascong_top_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="ascong_top_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="ascong_top_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="ascong_top_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="ascong_top_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="ascong_top_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="ascong_top_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="ascong_top_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="ascong_top_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="ascong_top_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="ascong_top_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="ascong_top_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="ascong_top_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="ascong_top_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="ascong_top.npi"/>
+  <File Type="RBD_FILE" Name="ascong_top.rbd"/>
+  <File Type="MMI-FILE" Name="ascong_top.mmi"/>
+  <File Type="BIF-FILE" Name="ascong_top.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="ascong_top_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="ascong_top_pld.bif"/>
+  <File Type="LTX-FILE" Name="ascong_top.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="ascong_top_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="ascong_top_pld.ltx"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="ascon_core.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ascon_core_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-SIMILARITY" Name="ascon_core_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="ascon_core.vdi"/>
-  <File Type="ROUTE-CLK" Name="ascon_core_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="ascon_core_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="ascon_core_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="ascon_core_bus_skew_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ascon_core_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ascon_core_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ascon_core_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ascon_core_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ascon_core_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="ascon_core.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ascon_core_bus_skew_postroute_physopted.pb"/>
-  <File Type="BITSTR-NKY" Name="ascon_core.nky"/>
-  <File Type="BITSTR-BMM" Name="ascon_core_bd.bmm"/>
+  <File Type="BITSTR-LTX" Name="ascong_top.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="ascong_top.sysdef"/>
+  <File Type="BG-BGN" Name="ascong_top.bgn"/>
+  <File Type="BG-DRC" Name="ascong_top.drc"/>
+  <File Type="RDI-RDI" Name="ascong_top.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-HWDEF" Name="ascon_core.hwdef"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="ascon_core_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DCP" Name="ascon_core_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="ascon_core_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="ascon_core_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="ascon_core_timing_summary_routed.pb"/>
-  <File Type="OPT-DCP" Name="ascon_core_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="ascon_core_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="ascon_core_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ascon_core_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="ascon_core_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ascon_core_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ascon_core_postroute_physopt_bb.dcp"/>
-  <File Type="PDI-FILE" Name="ascon_core.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="ascon_core_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="ascon_core_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="ascon_core.rcfi"/>
-  <File Type="CFI_FILE" Name="ascon_core.cfi"/>
-  <File Type="RNPI_FILE" Name="ascon_core.rnpi"/>
-  <File Type="NPI_FILE" Name="ascon_core.npi"/>
-  <File Type="RBD_FILE" Name="ascon_core.rbd"/>
-  <File Type="ROUTE-RQS" Name="ascon_core_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ascon_core_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="ascong_top_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="ascong_top_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
-  <File Type="MMI-FILE" Name="ascon_core.mmi"/>
-  <File Type="BIF-FILE" Name="ascon_core.bif"/>
-  <File Type="BOOT-BIF-FILE" Name="ascon_core_boot.bif"/>
-  <File Type="PL-BIF-FILE" Name="ascon_core_pld.bif"/>
-  <File Type="LTX-FILE" Name="ascon_core.ltx"/>
-  <File Type="BOOT-LTX-FILE" Name="ascon_core_boot.ltx"/>
-  <File Type="PL-LTX-FILE" Name="ascon_core_pld.ltx"/>
-  <File Type="RCDO-FILE" Name="ascon_core.rcdo"/>
-  <File Type="MARKER-RCDO-FILE" Name="ascon_core_markers.rcdo"/>
-  <File Type="PL-RCDO-FILE" Name="ascon_core_pld.rcdo"/>
-  <File Type="MARKER-RNPI-FILE" Name="ascon_core_markers.rnpi"/>
-  <File Type="BOOT_RNPI_FILE" Name="ascon_core_boot.rnpi"/>
-  <File Type="PL_RNPI_FILE" Name="ascon_core_pld.rnpi"/>
-  <File Type="BOOT_MARKER_RNPI_FILE" Name="ascon_core_boot_markers.rnpi"/>
-  <File Type="PL_MARKER_RNPI_FILE" Name="ascon_core_pld_markers.rnpi"/>
-  <File Type="PL_MASK_RNPI_FILE" Name="ascon_core_pld_mask.rnpi"/>
-  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="ascon_core_pld_shutdown.rnpi"/>
-  <File Type="PL_UNMASK_RNPI_FILE" Name="ascon_core_pld_unmask.rnpi"/>
-  <File Type="PL-CLEAR-RCDO-FILE" Name="ascon_core_pld_clear.rcdo"/>
-  <File Type="PL_MARKER_RCDO_FILE" Name="ascon_core_pld_markers.rcdo"/>
-  <File Type="PL_MASK_RCDO_FILE" Name="ascon_core_pld_mask.rcdo"/>
-  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="ascon_core_pld_unmask_markers.rcdo"/>
-  <File Type="PL_UNMASK_RCDO_FILE" Name="ascon_core_pld_unmask.rcdo"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/config.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/functions.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -116,14 +141,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/functions.sv">
+    <File Path="$PSRCDIR/sources_1/new/ascon_core.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ascon_core.sv">
+    <File Path="$PSRCDIR/sources_1/new/ascong_top.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -132,24 +157,40 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="ascon_core"/>
+      <Option Name="TopModule" Val="ascong_top"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ascon_xdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/ascon_core.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -159,6 +200,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

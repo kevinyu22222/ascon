@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log ascon_core.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ascon_core.tcl
+    with args -log ascong_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ascong_top.tcl
 
 
 
@@ -8,26 +8,35 @@
   **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
   **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
   **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-  **** Start of session at: Thu Mar 19 04:01:28 2026
+  **** Start of session at: Mon Mar 23 01:29:08 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
-source ascon_core.tcl -notrace
-Command: synth_design -top ascon_core -part xc7a100tcsg324-1
+source ascong_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/kevin/Downloads/ascon/ascon.srcs/utils_1/imports/synth_1/ascon_core.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/kevin/Downloads/ascon/ascon.srcs/utils_1/imports/synth_1/ascon_core.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ascong_top -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 23232
+INFO: [Synth 8-7075] Helper process launched with PID 12012
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.078 ; gain = 505.715
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1212.078 ; gain = 494.047
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'asconp' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/p_round.sv:91]
 INFO: [Synth 8-9937] previous definition of design element 'asconp' is here [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/p_round.sv:91]
 CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'register' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:42]
 INFO: [Synth 8-9937] previous definition of design element 'register' is here [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:42]
-INFO: [Synth 8-6157] synthesizing module 'ascon_core' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:28]
+INFO: [Synth 8-11241] undeclared symbol 'state_out', assumed default net type 'wire' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:363]
+INFO: [Synth 8-11241] undeclared symbol 'pt_out', assumed default net type 'wire' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:364]
+INFO: [Synth 8-6157] synthesizing module 'ascong_top' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ascon_core' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:27]
 INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:23]
 	Parameter DATA_WIDTH bound to: 128 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'register' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:23]
@@ -35,7 +44,7 @@ INFO: [Synth 8-6157] synthesizing module 'register__parameterized0' [C:/Users/ke
 	Parameter DATA_WIDTH bound to: 320 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'register__parameterized0' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'register__parameterized1' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:23]
-	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'register__parameterized1' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'register__parameterized2' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:23]
 	Parameter DATA_WIDTH bound to: 5 - type: integer 
@@ -46,36 +55,101 @@ INFO: [Synth 8-6157] synthesizing module 'register__parameterized3' [C:/Users/ke
 INFO: [Synth 8-6155] done synthesizing module 'register__parameterized3' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/register.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'asconp' [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/p_round.sv:24]
 INFO: [Synth 8-6155] done synthesizing module 'asconp' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/p_round.sv:24]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:208]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:372]
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:451]
-INFO: [Synth 8-6155] done synthesizing module 'ascon_core' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:28]
-WARNING: [Synth 8-3917] design ascon_core has port bdo_type[3] driven by constant 0
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:198]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:404]
+INFO: [Synth 8-251] Key_ready: x, bdi_ready: x, bdo_valid: x [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:462]
+INFO: [Synth 8-6155] done synthesizing module 'ascon_core' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascon_core.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'ascong_top' (0#1) [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:8]
+WARNING: [Synth 8-6014] Unused sequential element tag_hw0_reg was removed.  [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:133]
+WARNING: [Synth 8-6014] Unused sequential element tag_hw1_reg was removed.  [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:134]
+WARNING: [Synth 8-6014] Unused sequential element tag_hw2_reg was removed.  [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:135]
+WARNING: [Synth 8-6014] Unused sequential element tag_hw3_reg was removed.  [C:/Users/kevin/Downloads/ascon/ascon.srcs/sources_1/new/ascong_top.v:136]
+WARNING: [Synth 8-7129] Port bdo_eoo in module ascon_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[15] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[14] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[13] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[12] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[11] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[10] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[9] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[8] in module ascong_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1134.277 ; gain = 623.914
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.027 ; gain = 610.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1134.277 ; gain = 623.914
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.027 ; gain = 610.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1329.027 ; gain = 610.996
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1329.027 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/kevin/Downloads/ascon/ascon.srcs/constrs_1/new/ascon_xdc.xdc]
+Finished Parsing XDC File [C:/Users/kevin/Downloads/ascon/ascon.srcs/constrs_1/new/ascon_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kevin/Downloads/ascon/ascon.srcs/constrs_1/new/ascon_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ascong_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ascong_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1396.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1396.309 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1396.309 ; gain = 678.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1134.277 ; gain = 623.914
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1396.309 ; gain = 678.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1134.277 ; gain = 623.914
+Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1396.309 ; gain = 678.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ascong_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                             0000 |                            00000
+                  ST_SK0 |                             0001 |                            00010
+                  ST_SK1 |                             0010 |                            00011
+                  ST_SK2 |                             0011 |                            00100
+                  ST_SK3 |                             0100 |                            00101
+                  ST_SN0 |                             0101 |                            00110
+                  ST_SN1 |                             0110 |                            00111
+                  ST_SN2 |                             0111 |                            01000
+                  ST_SN3 |                             1000 |                            01001
+                  ST_SAD |                             1001 |                            01010
+                 ST_SMSG |                             1010 |                            01011
+                ST_RTAG0 |                             1011 |                            01100
+                ST_RTAG1 |                             1100 |                            01101
+                ST_RTAG2 |                             1101 |                            01110
+                ST_RTAG3 |                             1110 |                            01111
+                 ST_DONE |                             1111 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ascong_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1396.309 ; gain = 678.277
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input    4 Bit       Adders := 4     
-	   2 Input    2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     64 Bit         XORs := 12    
 	   3 Input     64 Bit         XORs := 8     
@@ -84,25 +158,29 @@ Detailed RTL Component Info :
 +---Registers : 
 	              320 Bit    Registers := 1     
 	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
 	               11 Bit    Registers := 1     
-	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 90    
-	   2 Input   24 Bit        Muxes := 1     
-	   4 Input   24 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 1     
-	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 79    
+	   3 Input   32 Bit        Muxes := 1     
+	  16 Input   32 Bit        Muxes := 2     
+	   2 Input   28 Bit        Muxes := 4     
 	   2 Input    8 Bit        Muxes := 19    
-	   2 Input    5 Bit        Muxes := 31    
-	   3 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 13    
-	   4 Input    4 Bit        Muxes := 2     
-	   3 Input    4 Bit        Muxes := 1     
-	   9 Input    3 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 4     
-	   9 Input    1 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 13    
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   3 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 1     
+	  16 Input    4 Bit        Muxes := 3     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 10    
 	   2 Input    1 Bit        Muxes := 17    
+	  16 Input    1 Bit        Muxes := 14    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -115,27 +193,39 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3917] design ascon_core has port bdo_type[3] driven by constant 0
+WARNING: [Synth 8-7129] Port bdo_eoo in module ascon_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[15] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[14] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[13] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[12] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[11] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[10] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[9] in module ascong_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[8] in module ascong_top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.156 ; gain = 1043.793
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1570.980 ; gain = 852.949
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1570.980 ; gain = 852.949
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1554.156 ; gain = 1043.793
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1767.688 ; gain = 1049.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1554.156 ; gain = 1043.793
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1767.746 ; gain = 1049.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -153,37 +243,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -196,57 +286,43 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |     3|
-|3     |LUT1   |     2|
-|4     |LUT2   |   208|
-|5     |LUT3   |   171|
-|6     |LUT4   |   277|
-|7     |LUT5   |   299|
-|8     |LUT6   |  1125|
-|9     |FDCE   |   472|
-|10    |FDPE   |     1|
-|11    |IBUF   |    83|
-|12    |OBUF   |    42|
-+------+-------+------+
-
-Report Instance Areas: 
-+------+--------------+-------------------------+------+
-|      |Instance      |Module                   |Cells |
-+------+--------------+-------------------------+------+
-|1     |top           |                         |  2684|
-|2     |  reg_cnt_i   |register__parameterized1 |    45|
-|3     |  reg_flags_i |register__parameterized3 |    52|
-|4     |  reg_fsm_i   |register__parameterized2 |  1068|
-|5     |  reg_key_i   |register                 |   256|
-|6     |  reg_state_i |register__parameterized0 |  1137|
-+------+--------------+-------------------------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |    46|
+|4     |LUT3 |    97|
+|5     |LUT4 |   209|
+|6     |LUT5 |   639|
+|7     |LUT6 |   731|
+|8     |FDCE |   391|
+|9     |FDPE |     1|
+|10    |FDRE |     8|
+|11    |IBUF |    12|
+|12    |OBUF |    16|
++------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 2 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 1578.914 ; gain = 1068.551
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1829.484 ; gain = 1044.172
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1829.484 ; gain = 1111.453
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1593.977 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1838.637 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1708.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1842.340 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 74467caa
+Synth Design complete | Checksum: 2791125d
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+44 Infos, 23 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1708.207 ; gain = 1199.812
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1842.340 ; gain = 1330.355
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1708.207 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/kevin/Downloads/ascon/ascon.runs/synth_1/ascon_core.dcp' has been generated.
-INFO: [Vivado 12-24828] Executing command : report_utilization -file ascon_core_utilization_synth.rpt -pb ascon_core_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 04:02:01 2026...
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1842.340 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/kevin/Downloads/ascon/ascon.runs/synth_1/ascong_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ascong_top_utilization_synth.rpt -pb ascong_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 23 01:29:53 2026...

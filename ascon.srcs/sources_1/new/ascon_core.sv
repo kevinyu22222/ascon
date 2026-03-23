@@ -458,5 +458,6 @@ module ascon_core(
       auth_valid_d = 'd1;
     end
   end
-
+  
+  always @(posedge clk) $display("Key_ready: %08h, bdi_ready: %08h, bdo_valid: %08h", key_ready, bdi_ready, bdo_valid);
 endmodule
