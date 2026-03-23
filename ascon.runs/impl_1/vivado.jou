@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Mar 19 04:02:08 2026
+# Process ID         : 24556
+# Current directory  : C:/Users/kevin/Downloads/ascon/ascon.runs/impl_1
+# Command line       : vivado.exe -log ascon_core.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ascon_core.tcl -notrace
+# Log file           : C:/Users/kevin/Downloads/ascon/ascon.runs/impl_1/ascon_core.vdi
+# Journal file       : C:/Users/kevin/Downloads/ascon/ascon.runs/impl_1\vivado.jou
+# Running On         : HDHR
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : AMD Ryzen 7 7800X3D 8-Core Processor           
+# CPU Frequency      : 4192 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33460 MB
+# Swap memory        : 22548 MB
+# Total Virtual      : 56009 MB
+# Available Virtual  : 18042 MB
+#-----------------------------------------------------------
+source ascon_core.tcl -notrace
